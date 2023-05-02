@@ -18,6 +18,7 @@ body {
 
 /*$$$$$$$$$$$$$$$$$$$*/
 /*Container*/
+/*Bloc Principal*/
 .container {
   display: flex;
   z-index: 1;
@@ -29,6 +30,7 @@ body {
   height: 100%;
   overflow: hidden;
   box-shadow: 15px 15px 15px #031837;
+  /*Images en fond*/
 }
 .container .container__image_fond, .container .container__image_fili {
   position: absolute;
@@ -73,6 +75,7 @@ body {
 }
 /*§§§§§§§§§§§§§§§*/
 /*HEADER*/
+/*LOGO FiTT Solutions*/
 .container__header {
   display: flex;
   justify-content: center;
@@ -109,6 +112,7 @@ body {
 }
 /*§§§§§§§§§§§§§§§*/
 /*LEFT-PART*/
+/*Bloc gauche 30% d'économie*/
 .container__left-part {
   animation-duration: 1.5s;
   animation-name: slide-right;
@@ -150,7 +154,7 @@ body {
   color: #be097f;
   text-align: center;
   width: 700px;
-  text-shadow: 4px 4px 4px #031837;
+  text-shadow: 3px 3px 3px #031837;
 }
 .container__left-part h2 {
   font-size: 60px;
@@ -171,7 +175,7 @@ body {
     font-size: 70px;
     line-height: 66px;
     width: 500px;
-    text-shadow: 3px 3px 3px #031837;
+    text-shadow: 2px 2px 2px #031837;
   }
   .container__left-part h2 {
     font-size: 40px;
@@ -189,6 +193,7 @@ body {
     font-size: 40px;
     line-height: 40px;
     width: 300px;
+    text-shadow: 1px 1px 1px #031837;
   }
   .container__left-part h2 {
     font-size: 24px;
@@ -198,6 +203,7 @@ body {
 }
 /*§§§§§§§§§§§§§§§§*/
 /*RIGHT-PART*/
+/*Bloc droit vert */
 .container__right-part {
   animation-duration: 4s;
   animation-name: slide-left;
@@ -209,7 +215,7 @@ body {
   margin-left: 600px;
   width: 800px;
   height: 340px;
-  background-color: #00a250;
+  background: linear-gradient(#00a250, #00572b);
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   padding: 80px 80px 80px 100px;
@@ -275,6 +281,7 @@ body {
 }
 /*§§§§§§§§§§§§§§§§*/
 /*FOOTER*/
+/*Les 2 lien en forme de boutons*/
 .container__footer {
   display: flex;
   z-index: 10;
@@ -288,7 +295,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #be097f;
+  background: linear-gradient(#be097f, #630442);
   width: 500px;
   height: 140px;
   border-radius: 50px;

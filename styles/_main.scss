@@ -21,7 +21,7 @@ body {
 
 /*$$$$$$$$$$$$$$$$$$$*/
 /*Container*/
-
+/*Bloc Principal*/
 .container {
     display: flex;
     z-index: 1;
@@ -34,6 +34,7 @@ body {
     overflow: hidden;
     box-shadow: 15px 15px 15px $bleu;
 
+    /*Images en fond*/
     .container__image_fond{
         position: absolute;
         display: flex;
@@ -90,7 +91,7 @@ body {
 
 /*§§§§§§§§§§§§§§§*/
 /*HEADER*/
-
+/*LOGO FiTT Solutions*/
 .container__header {
     @include flex-Center;
     z-index: 10;
@@ -129,7 +130,7 @@ body {
 
 /*§§§§§§§§§§§§§§§*/
 /*LEFT-PART*/
-
+/*Bloc gauche 30% d'économie*/
 .container__left-part{
     @include Slide($right, 1.5s);
     display: flex;
@@ -149,7 +150,7 @@ body {
         color: $violet;
         text-align: center;
         width: 700px;
-        text-shadow: 4px 4px 4px $bleu;
+        text-shadow: 3px 3px 3px $bleu;
     }
 
     h2{
@@ -173,7 +174,7 @@ body {
             font-size: 70px;
             line-height: 66px;
             width: 500px;
-            text-shadow: 3px 3px 3px $bleu;
+            text-shadow: 2px 2px 2px $bleu;
         }
     
         h2{
@@ -194,6 +195,8 @@ body {
             font-size: 40px;
             line-height: 40px;
             width: 300px;
+            text-shadow: 1px 1px 1px $bleu;
+
         }
     
         h2{
@@ -207,6 +210,7 @@ body {
 
 /*§§§§§§§§§§§§§§§§*/
 /*RIGHT-PART*/
+/*Bloc droit vert */
 .container__right-part {
     @include Slide($left, 4s);
     display: flex;
@@ -217,7 +221,8 @@ body {
     margin-left: 600px;
     width: 800px;
     height: 340px;
-    background-color: $vert1;
+    background: linear-gradient($vert1, #00572b);
+    // background-color: $vert1;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     padding: 80px 80px 80px 100px;
@@ -267,6 +272,7 @@ body {
 
 /*§§§§§§§§§§§§§§§§*/
 /*FOOTER*/
+/*Les 2 lien en forme de boutons*/
 .container__footer {
     display: flex;
     z-index: 10;
@@ -278,7 +284,8 @@ body {
     a {
         display: flex;
         @include flex-Center;
-        background-color: $violet;
+        // background-color: $violet;
+        background: linear-gradient($violet, #630442);
         width: 500px;
         height: 140px;
         border-radius: 50px;
