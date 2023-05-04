@@ -1,0 +1,25 @@
+@mixin flex-Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin Slide($direction, $duree){
+    animation-duration: $duree;
+    animation-name: $direction;
+
+    @keyframes slide-right {
+        from {transform: translateX(-1000px);}
+        50% {transform: translateX(-9000px);}
+        to {transform: translateX(0);}
+    }
+
+    @keyframes slide-left {
+        from {transform: translateX(1000px);}
+        50% {transform: translateX(900px);}
+        to {transform: translateX(000px);}
+    }
+}
+

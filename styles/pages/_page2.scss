@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $poppins;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+
+
+/*$$$$$$$$$$$$$$$$$$$*/
+/*Container*/
+/*Bloc Principal*/
+.container-page2 {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 1400px;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 15px 15px 15px $bleu;
+}
