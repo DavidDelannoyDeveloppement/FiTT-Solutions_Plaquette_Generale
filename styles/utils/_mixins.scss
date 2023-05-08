@@ -11,6 +11,7 @@
 }
 
 
+/*Animation Slide*/
 @mixin Slide($direction, $duree){
     animation-duration: $duree;
     animation-name: $direction;
@@ -29,6 +30,7 @@
 }
 
 
+/*Animation Souris*/
 @mixin slide-bottom-mouse($height) {
     @keyframes slide-bottom-mouse {
         0% { 
@@ -58,3 +60,23 @@
     }
 }
 
+
+/*Animation opacity*/
+@mixin opac{
+
+
+    @keyframes opac {
+        0% {opacity:0;}
+        10% {opacity:0;}
+        20% {opacity:0;}
+        30% {opacity:0;}
+        40% {opacity:0;}
+        50% {opacity:0;}
+        60% {opacity:0;}
+        70% {opacity:0;}
+        80% {opacity:0;}
+        90% {opacity: 0;}
+        99% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+}
