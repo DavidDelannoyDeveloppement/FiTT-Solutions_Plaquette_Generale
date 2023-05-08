@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+@mixin flex-center-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 @mixin Slide($direction, $duree){
@@ -20,6 +25,36 @@
         from {transform: translateX(1000px);}
         50% {transform: translateX(900px);}
         to {transform: translateX(000px);}
+    }
+}
+
+
+@mixin slide-bottom-mouse($height) {
+    @keyframes slide-bottom-mouse {
+        0% { 
+            top: 0;
+            opacity: 1;
+        }
+        
+        25% {
+            top: $height;
+            opacity: 1;
+        }
+
+        50% {
+            top: $height;
+            opacity: 0;
+        }
+
+        75% {
+            top: $height;
+            opacity: 0;
+        }
+
+        100% {
+            top: 0;
+            opacity: 0;
+        }
     }
 }
 

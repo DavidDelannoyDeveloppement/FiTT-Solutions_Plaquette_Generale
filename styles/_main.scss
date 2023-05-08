@@ -147,9 +147,8 @@ body {
     justify-content: space-around;
 
     a {
-        display: flex;
         @include flex-Center;
-        // background-color: $violet;
+        background-color: $violet;
         background: linear-gradient($violet, #630442);
         width: 500px;
         height: 140px;
@@ -160,6 +159,7 @@ body {
 
     a:hover {
         border: solid 3px $violet;
+        background: none;
         background-color: $bleu;
     }
 
