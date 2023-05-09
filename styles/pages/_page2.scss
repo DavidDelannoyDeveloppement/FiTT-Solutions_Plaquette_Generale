@@ -284,7 +284,7 @@
         width: 861px;
         border-radius: 60px;
         box-shadow: 5px 5px 10px $bleu;
-        z-index: 1;
+        z-index: 11;
         padding: 0px 50px 40px;
 
 
@@ -371,21 +371,21 @@
             text-shadow: 0.5px 1px 0.25px $bleu;
         }
     }
-    @include fade-right(2s);
+    @include fade-right(1s);
 
 
     .right-slice-formule2 {
         @extend .right-slice-formule1;
         color: $vert2;
     }
-    @include fade-right(2s);
+    // @include fade-right(2s);
 
 
     .right-slice-formule3 {
         @extend .right-slice-formule1;
         color: $violet;
     }
-    @include fade-right(2s);
+    // @include fade-right(2s);
 
 }
 
