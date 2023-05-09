@@ -112,7 +112,10 @@
     /*PART_TOP-SECTION*/
     .part_top-section {
         @include flex-center-column;
-        width: 500px;
+        // flex-wrap: wrap;
+        max-width: 500px;
+        min-width: 300px;
+
         // height: 400px;
         margin-bottom: 60px;
 
@@ -139,10 +142,10 @@
     @include opac;
 
     #part1 {
-        animation: opac 2s;
+        animation: opac 1s;
     }
     #part2 {
-        animation: opac 10s;
+        animation: opac 5s;
     }
 
     /*Explications*/
@@ -170,7 +173,7 @@
 
 
             p{
-                width: 400px;
+                max-width: 400px;
                 font-weight: 300;
                 font-size: 20px;
                 line-height: 24px;
@@ -179,22 +182,22 @@
         }
 
         #li1 {
-            animation: opac 4s;
+            animation: opac 2s;
         }
         #li2 {
-            animation: opac 6s;
+            animation: opac 3s;
         }
         #li3 {
-            animation: opac 8s;
+            animation: opac 4s;
         }
         #li4 {
-            animation: opac 12s;
+            animation: opac 6s;
         }
         #li5 {
-            animation: opac 14s;
+            animation: opac 7s;
         }
         #li6 {
-            animation: opac 16s;
+            animation: opac 8s;
         }
     }
 }
@@ -258,7 +261,7 @@
     }
 
 
-    .formules {
+    .formules { 
         @include flex-center-column;
         width: 97%;
 
@@ -268,10 +271,12 @@
             flex-wrap: wrap;
             width: 100%;
         }
-
-
-
     }
+
+    @include apparition(1s);
+
+
+
 
     .left-slice-formule {
         @include flex-center-column;
@@ -305,7 +310,6 @@
         }
 
         .details {
-            // @include flex-Center;
 
             .support-image-2 {
                 float: left;
@@ -346,12 +350,15 @@
     }
 
 
-    .right-slice-formule {
+    .right-slice-formule1 {
         @include flex-Center;
+        position: relative;
+        opacity: 0;
         z-index: 10;
         width: 400px;
         margin-top: 10px;
         margin-bottom: 10px;
+        color: $blue-non-photo;
         
         img {
             width: 50px;
@@ -364,17 +371,21 @@
             text-shadow: 0.5px 1px 0.25px $bleu;
         }
     }
+    @include fade-right(2s);
 
-        #right-formule1 {
-            color: $blue-non-photo;
-        }
-        #right-formule2 {
-            color: $vert2;
-        }
-        #right-formule3 {
-            color: $violet;
-        }
 
+    .right-slice-formule2 {
+        @extend .right-slice-formule1;
+        color: $vert2;
+    }
+    @include fade-right(2s);
+
+
+    .right-slice-formule3 {
+        @extend .right-slice-formule1;
+        color: $violet;
+    }
+    @include fade-right(2s);
 
 }
 
@@ -431,7 +442,7 @@
         }
 
 
-        .right-slice-formule {
+        .right-slice-formule1 {
             margin-top: 30px;
             margin-bottom: 80px;
         }

@@ -80,3 +80,138 @@
         100% {opacity: 1;}
     }
 }
+
+
+
+
+/*Animations au scroll*/
+/*Animation apparition par le bas*/
+@mixin apparition($duree) {
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+    
+    .reveal.active {
+    opacity: 1;
+    }
+    
+    
+    .active.apparition {
+    animation: fade-bottom $duree ease-in;
+    }
+    
+    @keyframes fade-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+}
+
+
+
+/*Animations au scroll*/
+/*Animation fade-right*/
+@mixin fade-right($duree) {
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+    
+    .reveal.active {
+    opacity: 1;
+    }
+    
+
+    .active.fade-right {
+    animation: fade-right ($duree) ease-in;
+    }
+    
+    
+    @keyframes fade-right {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animation NOM A DONNER*/
+// @mixin scroll-animation {
+//     .reveal {
+//         position: relative;
+//         opacity: 0;
+//     }
+    
+//     .reveal.active {
+//     opacity: 1;
+//     }
+    
+    
+//     .active.fade-bottom {
+//     animation: fade-bottom 1s ease-in;
+//     }
+//     .active.fade-left {
+//     animation: fade-left 1s ease-in;
+//     }
+//     .active.fade-right {
+//     animation: fade-right 1s ease-in;
+//     }
+    
+    
+    
+    
+//     @keyframes fade-bottom {
+//     0% {
+//         transform: translateY(50px);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+//     }
+//     @keyframes fade-left {
+//     0% {
+//         transform: translateX(-100px);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateX(0);
+//         opacity: 1;
+//     }
+//     }
+    
+//     @keyframes fade-right {
+//     0% {
+//         transform: translateX(100px);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateX(0);
+//         opacity: 1;
+//     }
+//     }
+// }
