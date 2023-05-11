@@ -17,8 +17,8 @@
     animation-name: $direction;
 
     @keyframes slide-right {
-        from {transform: translateX(-1000px);}
-        50% {transform: translateX(-9000px);}
+        from {transform: translateX(-100%);}
+        50% {transform: translateX(-100%);}
         to {transform: translateX(0);}
     }
 
@@ -138,34 +138,6 @@
         transform: translateX(-100%);
         opacity: 1;
     }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
-    // 0% {
-    //     transform: translateX(-100%);
-    //     opacity: 1;
-    // }
     40% {
         transform: translateX(0);
         opacity: 1;
@@ -225,69 +197,34 @@
 
 
 
+/*Animation accueil*/
+@mixin accueil-anim($duree) {
+ 
+    .accueil {
+    animation: accueil-anim $duree ease-in;
 
-
-
-
-
-
-
-
-
-/*Animation NOM A DONNER*/
-// @mixin scroll-animation {
-//     .reveal {
-//         position: relative;
-//         opacity: 0;
-//     }
+    }
     
-//     .reveal.active {
-//     opacity: 1;
-//     }
-    
-    
-//     .active.fade-bottom {
-//     animation: fade-bottom 1s ease-in;
-//     }
-//     .active.fade-left {
-//     animation: fade-left 1s ease-in;
-//     }
-//     .active.fade-right {
-//     animation: fade-right 1s ease-in;
-//     }
-    
-    
-    
-    
-//     @keyframes fade-bottom {
-//     0% {
-//         transform: translateY(50px);
-//         opacity: 0;
-//     }
-//     100% {
-//         transform: translateY(0);
-//         opacity: 1;
-//     }
-//     }
-//     @keyframes fade-left {
-//     0% {
-//         transform: translateX(-100px);
-//         opacity: 0;
-//     }
-//     100% {
-//         transform: translateX(0);
-//         opacity: 1;
-//     }
-//     }
-    
-//     @keyframes fade-right {
-//     0% {
-//         transform: translateX(100px);
-//         opacity: 0;
-//     }
-//     100% {
-//         transform: translateX(0);
-//         opacity: 1;
-//     }
-//     }
-// }
+    @keyframes accueil-anim {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    }
+}
+
+
+
+
+
+
+
+
