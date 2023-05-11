@@ -992,7 +992,7 @@ body .accueil {
 }
 .container-page2__middle-section h3 {
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   color: #fffce5;
   font-weight: 600;
 }
@@ -1011,7 +1011,7 @@ body .accueil {
   filter: invert(100%) sepia(9%) saturate(95%) hue-rotate(181deg) brightness(104%) contrast(900%);
 }
 .container-page2__middle-section .certification-box .certificat p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #031837;
 }
@@ -1027,9 +1027,9 @@ body .accueil {
   background-color: #fffce5;
 }
 .container-page2__bottom-section h2 {
-  font-size: 38px;
+  font-size: 36px;
   color: #031837;
-  margin: 60px 0;
+  margin: 80px 0;
 }
 .container-page2__bottom-section .formules {
   display: flex;
@@ -1123,7 +1123,7 @@ body .accueil {
   margin: 0 20px;
 }
 .container-page2__bottom-section .right-slice-formule1 p, .container-page2__bottom-section .right-slice-formule3 p, .container-page2__bottom-section .right-slice-formule2 p {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   text-shadow: 0.5px 1px 0.25px #031837;
 }
@@ -1239,6 +1239,9 @@ body .accueil {
   .container-page2__bottom-section .formules {
     width: 90%;
   }
+  .container-page2__bottom-section .left-slice-formule {
+    padding: 0px 50px 20px;
+  }
   .container-page2__bottom-section .right-slice-formule1, .container-page2__bottom-section .right-slice-formule2, .container-page2__bottom-section .right-slice-formule3 {
     margin-top: 30px;
     margin-bottom: 80px;
@@ -1338,7 +1341,7 @@ body .accueil {
     box-shadow: 5px 5px 10px #031837;
   }
   .container-page2__middle-section h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
   .container-page2__middle-section .certification-box {
     width: 80%;
@@ -1349,22 +1352,22 @@ body .accueil {
     margin-right: 5px;
   }
   .container-page2__middle-section .certification-box .certificat p {
-    font-size: 18px;
+    font-size: 20px;
   }
   /*§§§§§§§§§§§§§§§§*/
   /*BOTTOM-SECTION 900px*/
   .container-page2__bottom-section h2 {
-    font-size: 38px;
+    font-size: 30px;
     margin: 60px 0;
   }
   .container-page2__bottom-section .formules {
-    width: 97%;
+    width: 92%;
   }
   .container-page2__bottom-section .left-slice-formule {
     width: 861px;
     border-radius: 60px;
     box-shadow: 5px 5px 10px #031837;
-    padding: 0px 50px 40px;
+    padding: 0px 50px 20px;
   }
   .container-page2__bottom-section .left-slice-formule h3 {
     font-size: 26px;
@@ -1401,7 +1404,7 @@ body .accueil {
     margin: 0 20px;
   }
   .container-page2__bottom-section .right-slice-formule1 p, .container-page2__bottom-section .right-slice-formule2 p, .container-page2__bottom-section .right-slice-formule3 p {
-    font-size: 26px;
+    font-size: 24px;
     text-shadow: 0.5px 1px 0.25px #031837;
   }
   /*§§§§§§§§§§§§§§§§*/
@@ -1508,7 +1511,7 @@ body .accueil {
     box-shadow: 5px 5px 10px #031837;
   }
   .container-page2__middle-section h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .container-page2__middle-section .certification-box {
     width: 80%;
@@ -1519,25 +1522,25 @@ body .accueil {
     margin-right: 5px;
   }
   .container-page2__middle-section .certification-box .certificat p {
-    font-size: 16px;
+    font-size: 18px;
   }
   /*§§§§§§§§§§§§§§§§*/
   /*BOTTOM-SECTION 700px*/
   .container-page2__bottom-section h2 {
-    font-size: 32px;
+    font-size: 26px;
     margin: 60px 0;
   }
   .container-page2__bottom-section .formules {
-    width: 97%;
+    width: 92%;
   }
   .container-page2__bottom-section .left-slice-formule {
     width: 861px;
     border-radius: 60px;
     box-shadow: 5px 5px 10px #031837;
-    padding: 0px 50px 40px;
+    padding: 0px 50px 20px;
   }
   .container-page2__bottom-section .left-slice-formule h3 {
-    font-size: 22px;
+    font-size: 24px;
     width: 200px;
     height: 40px;
     border-radius: 20px;
@@ -1571,7 +1574,7 @@ body .accueil {
     margin: 0 20px;
   }
   .container-page2__bottom-section .right-slice-formule1 p, .container-page2__bottom-section .right-slice-formule2 p, .container-page2__bottom-section .right-slice-formule3 p {
-    font-size: 22px;
+    font-size: 20px;
     text-shadow: 0.5px 1px 0.25px #031837;
   }
   /*§§§§§§§§§§§§§§§§*/
@@ -1695,21 +1698,21 @@ body .accueil {
   /*§§§§§§§§§§§§§§§§*/
   /*BOTTOM-SECTION 500px*/
   .container-page2__bottom-section h2 {
-    font-size: 26px;
+    font-size: 22px;
     margin: 60px 0;
     text-align: center;
   }
   .container-page2__bottom-section .formules {
-    width: 97%;
+    width: 90%;
   }
   .container-page2__bottom-section .left-slice-formule {
     width: 861px;
     border-radius: 60px;
     box-shadow: 5px 5px 10px #031837;
-    padding: 0px 50px 40px;
+    padding: 0px 50px 20px;
   }
   .container-page2__bottom-section .left-slice-formule h3 {
-    font-size: 18px;
+    font-size: 20px;
     width: 160px;
     height: 34px;
     border-radius: 20px;
@@ -1717,7 +1720,7 @@ body .accueil {
     margin-bottom: 20px;
   }
   .container-page2__bottom-section .left-slice-formule h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 6px;
   }
   .container-page2__bottom-section .left-slice-formule .details .support-image-2 {
@@ -1730,7 +1733,7 @@ body .accueil {
     width: 12px;
   }
   .container-page2__bottom-section .left-slice-formule .details p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     margin-bottom: 15px;
   }
@@ -1755,7 +1758,7 @@ body .accueil {
   }
   .container-page2__footer a {
     font-size: 22px;
-    padding: 20px 30px;
+    padding: 30px 30px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     box-shadow: 5px 5px 15px black;
