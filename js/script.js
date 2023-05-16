@@ -13,3 +13,13 @@ function reveal() {
   }
 
 window.addEventListener("scroll", reveal);
+
+
+
+//fonction page accueil
+window.addEventListener("load", loader);
+function loader(){
+  const TLLOAD = gsap.timeline();
+  TLLOAD
+  .to('.accueil', {height: 400, duration: 1.3, delay:0.4, ease: 'power2'})
+}

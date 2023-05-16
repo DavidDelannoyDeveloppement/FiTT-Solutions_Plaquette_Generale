@@ -1,0 +1,207 @@
+/*$$$$$$$$$$$$$$$$$$$*/
+/*Container*/
+/*Bloc Principal*/
+
+
+.container-page3 {
+    @include flex-center-column;
+    width: 100%;
+    position: relative;
+    background-color: $creme;
+
+
+    nav {
+        @include flex-Center;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+
+        a {
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            color: $saumon;
+            text-decoration: none;
+            text-shadow: 0.8px 0.8px 1px $bleu;
+        }
+
+        a:hover {
+            color: $vert1;
+            font-size: 22px;
+
+        }
+    }
+
+}
+
+
+/*TITRE PRINCIPAL*/
+.container-page3__header-page3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $creme;
+    // padding-bottom: 80px;
+
+    h1 {
+        @include flex-center-column;
+        text-align: center;
+        background-color: $bleu;
+        color: $creme;
+        font-weight: 700;
+        font-size: 36px;
+        padding: 0.5em 0.5em 1em;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        box-shadow: 2px 2px 20px $vert3;
+    }
+    span {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        width: 70%;
+    }
+
+
+
+    /*MOUVEMENT SOURIS*/
+    .barre {
+        position: relative;
+        overflow: hidden;
+        left: -70px;
+        top: 30px;
+        width: 15px;
+        height: 70px;
+        background-color: $vert1;
+        border: 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    
+        .point {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: $bleu;
+            border-radius: 50%;
+            animation: slide-bottom-mouse 2s ease-in infinite;
+        }
+        @include slide-bottom-mouse(70px)
+    }
+
+}
+
+
+
+
+/*§§§§§§§§§§§§§§§*/
+/*TOP SECTION*/
+.container-page3__top-section {
+    @include flex-center-column;
+    width: 100%;
+
+
+    h3 {
+        text-align: center;
+        color: $vert3;
+        font-size: 36px;
+        margin: 2em 0 1em;
+    }
+}
+
+/*Descriptions 1 & 2*/
+.top-section__descriptions{
+    @include flex-Center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+
+    .descriptions {
+        @include flex-Center;
+        justify-content: space-between;
+        margin: 20px;
+
+        .support-img {
+            @include flex-Center;
+            align-self: flex-start;
+            background-color: $vert3;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+
+            img {
+            width: 20px;
+            filter: invert(90%) sepia(12%) saturate(591%) hue-rotate(330deg) brightness(110%) contrast(104%);
+            }
+        }
+
+
+        p{
+            max-width: 400px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: $bleu;
+        }
+    }
+}
+
+
+/*Plan CoolBox*/
+.plan{
+    @include flex-Center;
+    width: 100%;
+    justify-content: space-around;
+
+    .plan__capteurs {
+        @include flex-center-column;
+
+        .images-capteurs {
+
+
+            img {
+                width: 80px;
+            }
+        }
+
+        .icons {
+            @include flex-Center;
+
+            img {
+                padding: 3px;
+                width:40px;
+                margin: 5px;
+                filter: invert(10%) sepia(30%) saturate(2001%) hue-rotate(182deg) brightness(100%) contrast(105%);
+                border-radius: 50%;
+                // border: solid 3px rgba(255, 3, 179, 0.555);
+                border: solid 3px $vert3;
+
+            }
+        }
+    }
+
+    .plan__lora {
+        @include flex-center-column;
+ 
+
+        .arrows-lora {
+            filter: invert(10%) sepia(30%) saturate(2001%) hue-rotate(182deg) brightness(100%) contrast(105%);
+            width: 60px;
+        }
+
+        .icon-lora {
+            padding-top: 10px;
+            width: 80px;
+        }
+    }
+
+    .plan__p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
