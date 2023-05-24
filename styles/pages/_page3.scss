@@ -113,8 +113,9 @@
 
 /*Descriptions 1 & 2*/
 .top-section__descriptions{
-    @include flex-Center;
+    display: flex;
     justify-content: space-around;
+    align-items: self-start;
     flex-wrap: wrap;
     width: 100%;
 
@@ -132,7 +133,7 @@
             border-radius: 50%;
             width: 35px;
             height: 35px;
-            margin-right: 10px;
+            margin-right: 15px;
 
             img {
             width: 20px;
@@ -161,6 +162,7 @@
 
     /*Plan Capteurs*/
     .plan__capteurs {
+        animation: opac 1s;
         @include flex-center-column;
         .images-capteurs {
             img {
@@ -192,6 +194,7 @@
 
     /*Plan Lora*/
     .plan__lora {
+        animation: opac 2s;
         @include flex-center-column;
         align-self: flex-end;
 
@@ -209,11 +212,13 @@
 
     /*Plan Passerelle*/
     .passerelle {
+        animation: opac 3s;
         @include flex-center-column;
     }
 
     /*>Plan Wifi*/
     .plan__wifi {
+        animation: opac 4s;
         @include flex-center-column;
         align-self: flex-end;
 
@@ -251,7 +256,7 @@
     /*Base*/
     .plan__base {
         @include flex-center-column;
-        
+        animation: opac 5s;
         .support-base {
             position: relative;
             margin-top: 20px;
@@ -290,7 +295,7 @@
     /*Flèche droite*/
     .fleche {
         @include flex-Center;
-
+        animation: opac 6s;
 
         img {
             filter: invert(10%) sepia(30%) saturate(2001%) hue-rotate(182deg) brightness(100%) contrast(105%);
@@ -304,7 +309,7 @@
     /*DashBoard*/
     .dashboard {
         @include flex-center-column;
-
+        animation: opac 7s;
         .support-pc {
             @include flex-Center;
 
@@ -331,6 +336,7 @@
 
     }
 }
+@include opac;
 
 
 /*§§§§§§§§§§§§§§§*/
@@ -350,8 +356,8 @@
         box-shadow: 5px -5px 10px $bleu;
         border-radius: 50px;
         z-index: 1;
-        width: 300px;
-        height: 160px;
+        width: 360px;
+        height: 180px;
     }
 
     img {
@@ -363,10 +369,9 @@
 
     p {
         font-size: 20px;
-        padding: 0.4em 0;
+        padding: 0.3em 0 0.8em;
         color: $creme;
         text-align: center
-
     }
     
 
@@ -388,7 +393,93 @@
         text-align: center;
         color: $vert3;
         font-size: 36px;
-        margin: 4em 0 1em;
+        margin: 5em 0 1em;
         color: $saumon;
+    }
+
+
+    .dash_and_texts {
+        @include flex-Center;
+
+        .dash {
+            @include flex-Center;
+            justify-content: space-around;
+            width: 520px;
+
+            .dash-logo {
+                @include flex-center-column;
+                justify-content: space-around;
+                height: 200px;
+
+                .support-cmvp {
+
+                    img {
+                        border-radius: 20px;
+                        width: 100px;
+                    }
+                }
+
+                .support-ipmvp {
+
+                    img {
+                        border-radius: 50%;
+                        width: 100px;
+                    }
+                }
+            }
+
+            .dash-img {
+
+
+                .support-pc2 {
+                    @include flex-Center;
+        
+                    .pc2 {
+                    width: 360px;
+                    position: relative;
+                    }
+                    .dash2 {
+                        position: absolute;
+                        width: 320px;
+                        margin-top: -28px;
+                    }
+                }
+            }
+        }
+
+        .texts {
+            width: 600px;
+
+
+            .descriptions {
+                @include flex-Center;
+                margin: 20px;
+        
+                .support-img {
+                    @include flex-Center;
+                    align-self: flex-start;
+                    background-color: $saumon;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 15px;
+        
+                    img {
+                    width: 20px;
+                    filter: invert(90%) sepia(12%) saturate(591%) hue-rotate(330deg) brightness(110%) contrast(104%);
+                    }
+                }
+        
+        
+                p{
+                    max-width: 500px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $creme;
+                }
+            }
+            
+        }
     }
 }

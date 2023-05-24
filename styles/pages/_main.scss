@@ -165,7 +165,7 @@ body {
 
     a {
         @include flex-Center;
-        background-color: $violet;
+        // background-color: $violet;
         background: linear-gradient($violet, #630442);
         width: 500px;
         height: 140px;
