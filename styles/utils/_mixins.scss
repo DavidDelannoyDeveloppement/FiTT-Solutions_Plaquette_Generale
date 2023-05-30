@@ -224,7 +224,48 @@
 
 
 
+/*Animation logo*/
+/*Animation accueil*/
+@mixin anim-logo($duree) {
+ 
+    .animation-logo-fitt {
+    animation: anim-logo $duree ease-in-out infinite;
+
+    }
+    
+    @keyframes anim-logo {
+    0% {
+        filter: invert(41%) sepia(76%) saturate(1121%) hue-rotate(160deg) brightness(98%) contrast(102%);
+        rotate: 0deg;
+    }
+
+    20% {
+        rotate: 72deg;
 
 
+    }
+
+    40% {
+        rotate: 144deg;
+        
+    }
+
+    60% {
+        filter: invert(48%) sepia(80%) saturate(5229%) hue-rotate(133deg) brightness(97%) contrast(101%);
+        rotate: 216deg;
+
+    }
+
+    80% {
+        rotate: 288deg;
 
 
+    }
+
+    100% {
+        filter: invert(85%) sepia(10%) saturate(3063%) hue-rotate(315deg) brightness(102%) contrast(93%);
+        rotate: 360deg;
+
+    }
+    }
+}

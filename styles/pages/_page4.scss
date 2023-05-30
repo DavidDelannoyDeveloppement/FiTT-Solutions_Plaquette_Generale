@@ -1,18 +1,15 @@
 /*$$$$$$$$$$$$$$$$$$$*/
 /*Container*/
 /*Bloc Principal*/
-
-
 .container-page4 {
     @include flex-center-column;
     width: 100%;
+    height: 100%;
     position: relative;
-    background-color: $creme;
-    font-size: 20px;
-    padding: 1em 0.5em;
+    background-color: $bleu;
 
     nav {
-        @include flex-Center;
+        @include flex-center-column;
         top: 20px;
         left: 20px;
         position: absolute;
@@ -25,6 +22,7 @@
             font-size: 20px;
             color: $saumon;
             text-decoration: none;
+            margin-bottom: 1em;
         }
 
         a:hover {
@@ -43,23 +41,28 @@
     justify-content: center;
     width: 100%;
     background-color: $creme;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
     h1 {
+        @include flex-center-column;
         text-align: center;
         background-color: $bleu;
         color: $creme;
         font-weight: 700;
         font-size: 36px;
-        padding: 40px 100px 40px 60px;
+        line-height: 1.2em;
+        padding: 0.5em 0.5em 1em;
         border-bottom-left-radius: 60px;
         border-bottom-right-radius: 60px;
-        box-shadow: 5px 5px 15px black;
+        box-shadow: 2px 2px 15px black;
     }
     span {
+        margin-top: 1em;
         font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        width: 70%;
     }
-
 
 
     /*MOUVEMENT SOURIS*/
@@ -68,7 +71,7 @@
         overflow: hidden;
         // margin: 60px 0 0 -60px;
         left: -60px;
-        top: 60px;
+        top: 100px;
         width: 15px;
         height: 70px;
         background-color: $vert1;
@@ -90,4 +93,161 @@
 
 }
 
+/*§§§§§§§§§§§§§§§§*/
+/*TOP SECTION */
+.container-page4__top-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-bottom: 300px;
+    background-color: $creme;
 
+    .top-section-logos {
+        @include flex-Center;
+        flex-wrap: wrap;
+
+        img {
+            width: 200px;
+            margin: 0 2em;
+        }
+    }
+}
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*Conclusion */
+.container-page4__bottom-section {
+    @include flex-center-column;
+    width: 100%;
+
+
+    .vert3-part {
+        @include flex-center-column;
+        width: 80%;
+        background-color: $vert3;
+        padding-top: 200px;
+        margin-top: -150px;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        position: relative;
+        box-shadow: 3px -3px 15px $bleu;
+
+        img {
+            position: absolute;
+            width: 300px;
+            top: -150px;
+            filter: invert(94%) sepia(8%) saturate(1154%) hue-rotate(318deg) brightness(107%) contrast(107%);
+        }
+        
+
+        h3 {
+            font-size: 36px;
+            color: $bleu;
+            text-align: center;
+            margin: 1em 0;
+            width: 80%;
+        }
+
+        .avantages {
+            @include flex-Center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 3em;
+
+            .avantages-part {
+                @include flex-center-column;
+                // width: 25%;
+
+                img {
+                    position: static;
+                    width: 60px;
+                    filter: invert(9%) sepia(69%) saturate(1246%) hue-rotate(188deg) brightness(93%) contrast(103%);
+                    margin-top: 1em;
+                }
+
+                p {
+                    margin-top: 1em;
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $creme;
+                    margin: 1em 0;
+                    width: 75%;
+                }
+            }
+        }
+    }
+    @include anim-logo(12s);
+
+
+
+
+    .vert1-part {
+        @include flex-Center;
+        width: 100%;
+        background-color: $vert1;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+
+        .footer__logo  {
+            @include flex-Center;
+            width: 50%;
+
+
+            img {
+                width: 350px;
+                position: static;
+
+            }
+        }
+
+        .footer__texts {
+            width: 50%;
+            @include flex-center-column;
+
+            h3 {
+                color: $creme;
+                margin: 1em 0 0.5em;
+            }
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: $creme;
+                text-align: center;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            a:hover {
+                color: $bleu;
+                font-weight: 500;
+            }
+
+            .footer-lien {
+                @include flex-Center;
+                margin-bottom: 1em ;
+
+                img {
+                    position: static;
+                    width: 20px;
+                    margin-left: 10px;
+                    filter: invert(9%) sepia(69%) saturate(1246%) hue-rotate(188deg) brightness(93%) contrast(103%);
+
+                }
+            }
+        }
+    }
+}
+
+
+
+/*§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§*/
+/*Responsive Design*/

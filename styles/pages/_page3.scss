@@ -11,7 +11,7 @@
 
 
     nav {
-        @include flex-Center;
+        @include flex-center-column;
         top: 20px;
         left: 20px;
         position: absolute;
@@ -25,6 +25,7 @@
             color: $saumon;
             text-decoration: none;
             text-shadow: 0.8px 0.8px 1px $bleu;
+            margin-bottom: 1em;
         }
 
         a:hover {
@@ -104,6 +105,8 @@
     margin-bottom: 100px;
 
     h3 {
+        @include flex-Center;
+        width: 90%;
         text-align: center;
         color: $vert3;
         font-size: 36px;
@@ -344,10 +347,10 @@
 .container-page3__middle-section {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     z-index: 2;
     width: 100%;
-    margin-bottom: -80px;
+    margin-bottom: -90px;
 
 
     .middle-part {
@@ -396,10 +399,507 @@
         margin: 5em 0 1em;
         color: $saumon;
     }
+}
 
+.dash_and_texts {
+    @include flex-Center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .dash {
+        @include flex-Center;
+        justify-content: space-around;
+        width: 520px;
+
+        .dash-logo {
+            @include flex-center-column;
+            justify-content: space-around;
+            height: 200px;
+
+            .support-cmvp {
+
+                img {
+                    border-radius: 20px;
+                    width: 100px;
+                }
+            }
+
+            .support-ipmvp {
+
+                img {
+                    border-radius: 50%;
+                    width: 100px;
+                }
+            }
+        }
+
+        .dash-img {
+            margin-bottom: 50px;
+
+
+            .support-pc2 {
+                @include flex-Center;
+    
+                .pc2 {
+                width: 360px;
+                position: relative;
+                }
+                .dash2 {
+                    position: absolute;
+                    width: 328px;
+                    margin-top: -80px;
+                }
+            }
+        }
+    }
+
+    .texts {
+        width: 600px;
+
+
+        .descriptions {
+            @include flex-Center;
+            margin: 20px;
+            width: 100%;
+            margin: 30px 20px;
+            
+    
+            .support-img {
+                @include flex-Center;
+                align-self: flex-start;
+                background-color: $saumon;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                margin-right: 15px;
+    
+                img {
+                width: 20px;
+                filter: invert(90%) sepia(12%) saturate(591%) hue-rotate(330deg) brightness(110%) contrast(104%);
+                }
+            }
+    
+    
+            p{
+                max-width: 500px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: $creme;
+            }
+        }
+        
+    }
+}
+
+.cee-box {
+    @include flex-Center;
+    background-color: $vert1;
+    border-radius: 60px;
+    margin: 100px 0 50px;
+    position: relative;
+    opacity: 0;
+
+    .cee-logo {
+
+        img {
+            width: 300px;
+            margin-left: -50px;
+        }
+    }
+
+    .cee-texts {
+
+        h4 {
+            text-align: center;
+            color: $creme;
+            font-size: 34px;
+            line-height: 1.2em;
+            margin-top: 1em;
+            font-weight: 300;
+        }
+
+        p {
+            color: $creme;
+            font-style: italic;
+            margin: 1em 2em 2em;
+        }
+
+    }
+}
+@include fade-right(1s);
+
+
+
+/*Footer-section */
+.container-page3__footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $bleu;
+    padding-top: 80px;
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: $bleu;
+        background-color: $creme;
+        font-weight: 700;
+        font-size: 36px;
+        padding: 1em 2em;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        box-shadow: 4px 0 15px black;
+    }
+
+    a:hover {
+        color: $vert3;
+        // background-color: $vert3;
+    }
+}
+
+
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*RESPONSIVE DESIGN*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+
+
+
+
+
+
+/*$$$$$$$$$$$$$$$$$$$*/
+/*Container*/
+/*Bloc Principal -900px*/
+@media only screen and (max-width:900px){
+    .container-page3 {
+
+        nav {
+            top: 160px;
+            left: 20px;
+
+            a {
+                margin-bottom: 0.5em;
+            }
+
+            a:hover {
+                color: $vert1;
+                font-size: 22px;
+            }
+        }
+    }
+
+
+    /*TITRE PRINCIPAL -900px*/
+    .container-page3__header-page3 {
+        width: 100%;
+        // padding-bottom: 80px;
+
+        h1 {
+            font-size: 30px;
+            padding: 0.5em 0.5em 1em;
+        }
+        span {
+            font-size: 20px;
+            width: 70%;
+        }
+
+
+
+        /*MOUVEMENT SOURIS*/
+        .barre {
+            position: relative;
+            overflow: hidden;
+            left: -70px;
+            top: 30px;
+            width: 15px;
+            height: 70px;
+            background-color: $vert1;
+            border: 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+        
+            .point {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background-color: $bleu;
+                border-radius: 50%;
+                animation: slide-bottom-mouse 2s ease-in infinite;
+            }
+            @include slide-bottom-mouse(70px)
+        }
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§*/
+    /*TOP SECTION -900px*/
+    .container-page3__top-section {
+        width: 100%;
+        margin-bottom: 50px;
+
+        h3 {
+            font-size: 36px;
+            margin: 5em 0 1em;
+
+        }
+    }
+
+    /*Descriptions 1 & 2 -900px*/
+    .top-section__descriptions{
+        justify-content: space-around;
+        align-items: self-start;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .descriptions {
+            justify-content: space-between;
+            margin: 20px;
+
+            .support-img {
+                align-self: flex-start;
+                width: 35px;
+                height: 35px;
+                margin-right: 15px;
+
+                img {
+                width: 20px;
+                }
+            }
+
+
+            p{
+                max-width: 400px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+
+    /*Plan CoolBox -900px*/
+    .plan{
+        @include flex-center-column;
+        width: 100%;
+        margin: 3em 0;
+
+        /*Plan Capteurs*/
+        .plan__capteurs {
+            animation: opac 1s;
+            @include flex-center-column;
+            .images-capteurs {
+                img {
+                    width: 80px;
+                }
+            }
+
+            .icons {
+                @include flex-Center;
+
+                .support-icon {
+                    margin: 5px;
+                    padding:2px;
+                    width:40px;
+                    height: 40px;
+                
+                    img {
+                        width: 28px;
+                    }
+                }
+            }
+        }
+
+        /*Plan Lora*/
+        .plan__lora {
+            animation: opac 2s;
+            @include flex-Center;
+            flex-direction: row;
+            align-self: center;
+            margin: 2em 0 2em 3em;
+
+            .arrows {
+            width: 50px;
+            margin-bottom: 0;
+            margin: 0em 2em;
+            rotate: 90deg;
+            }
+
+            .icon-lora {
+                width: 60px;
+            }
+        }
+
+
+        /*Plan Passerelle*/
+        .passerelle {
+            animation: opac 3s;
+            @include flex-center-column;
+        }
+
+        /*>Plan Wifi*/
+        .plan__wifi {
+            animation: opac 4s;
+            @include flex-Center;
+            flex-direction: row;
+            align-self: center;
+            margin: 2em 0 2em 8em;
+
+
+            .arrows {
+                width: 50px;
+                margin: 0em 2em;
+                rotate: 90deg;
+                }
+
+            .icons {
+                @include flex-Center;
+
+                img {
+                    width: 40px;
+                }
+
+                .support-icon {
+                    margin: 5px;
+                    padding:2px;
+                    width:40px;
+                    height: 40px;
+                
+                        img {
+                            width: 28px;
+                        }
+                }
+            }
+        }
+
+
+        /*Base*/
+        .plan__base {
+            @include flex-center-column;
+            animation: opac 5s;
+            .support-base {
+                margin-top: 20px;
+
+                .img-base-1 {
+                    width: 30px;
+                    top: -20px;
+                    left: -15px;
+                }
+                .img-base-2 {
+                    width: 40px;
+                }
+                .img-base-3 {
+                    top: 25px;
+                    left: 30px;
+                    width: 20px;
+                }
+            }
+        }
+
+
+        /*Flèche droite*/
+        .fleche {
+            @include flex-Center;
+            animation: opac 6s;
+            margin: 2em 0;
+
+            img {
+                width: 50px;
+                margin-top: 20px;
+                rotate: 90deg
+            }
+
+        }
+
+
+        /*DashBoard*/
+        .dashboard {
+            @include flex-center-column;
+            animation: opac 7s;
+            .support-pc {
+                @include flex-Center;
+
+                .pc {
+                width: 100px;
+                }
+                .dash {
+                    width: 90px;
+                    margin-top: -28px;
+                }
+            }
+
+        }
+
+
+        /*Plan P général*/
+        .plan__p {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+    }
+    @include opac;
+
+
+    /*§§§§§§§§§§§§§§§*/
+    /*MIDDLE-SECTION -900px*/
+    .container-page3__middle-section {
+        justify-content: space-around;
+        // flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: -110px;
+
+
+        .middle-part {
+            @include flex-center-column;
+            box-shadow: 5px -5px 10px $bleu;
+            border-radius: 50px;
+            width: 360px;
+            height: 180px;
+            margin: 20px 10px;
+        }
+
+        img {
+            width: 60px;
+            margin-top: -30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 0.3em 0 0.8em;
+        }   
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*BOTTOM-SECTION -900px */
+    .container-page3__bottom-section {
+        @include flex-center-column;
+        width: 100%;
+        h3 {
+            font-size: 30px;
+            margin: 5em 0 1.5em;
+        }
+    }
 
     .dash_and_texts {
         @include flex-Center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
 
         .dash {
             @include flex-Center;
@@ -430,18 +930,17 @@
 
             .dash-img {
 
-
                 .support-pc2 {
                     @include flex-Center;
         
                     .pc2 {
-                    width: 360px;
+                    width: 350px;
                     position: relative;
                     }
                     .dash2 {
                         position: absolute;
-                        width: 320px;
-                        margin-top: -28px;
+                        width: 318px;
+                        margin-top: -78px;
                     }
                 }
             }
@@ -453,7 +952,8 @@
 
             .descriptions {
                 @include flex-Center;
-                margin: 20px;
+                width: 100%;
+                
         
                 .support-img {
                     @include flex-Center;
@@ -480,6 +980,66 @@
                 }
             }
             
+        }
+    }
+
+    .cee-box {
+        @include flex-Center;
+        flex-wrap:wrap;
+        border-radius: 60px;
+        margin: 100px 0 50px;
+        width: 75%;
+
+        .cee-logo {
+
+            img {
+                width: 240px;
+                margin-left: 0;
+                margin-top: -50px;
+            }
+        }
+
+        .cee-texts {
+
+            h4 {
+                text-align: center;
+                color: $creme;
+                font-size: 30px;
+                line-height: 1.2em;
+                margin-top: 0.3em;
+                font-weight: 300;
+            }
+
+            p {
+                color: $creme;
+                font-style: italic;
+                margin: 1em 2em 2em;
+            }
+
+        }
+    }
+    @include fade-right(1s);
+
+
+
+    /*Footer-section -900px */
+    .container-page3__footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 40px;
+
+        a {
+            font-size: 30px;
+            padding: 1em 2em;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            box-shadow: 4px 0 15px black;
+        }
+
+        a:hover {
+            color: $vert3;
+            // background-color: $vert3;
         }
     }
 }
