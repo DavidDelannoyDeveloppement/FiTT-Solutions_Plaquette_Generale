@@ -4176,29 +4176,31 @@ body .accueil {
   width: 75%;
 }
 .container-page4__bottom-section .animation-logo-fitt {
-  animation: anim-logo 12s ease-in-out infinite;
+  animation: anim-logo 18s ease-in-out infinite;
 }
 @keyframes anim-logo {
   0% {
-    filter: invert(41%) sepia(76%) saturate(1121%) hue-rotate(160deg) brightness(98%) contrast(102%);
     rotate: 0deg;
   }
   20% {
     rotate: 72deg;
+    filter: invert(93%) sepia(19%) saturate(251%) hue-rotate(14deg) brightness(106%) contrast(102%);
   }
   40% {
     rotate: 144deg;
+    filter: invert(37%) sepia(99%) saturate(1689%) hue-rotate(127deg) brightness(91%) contrast(101%);
   }
   60% {
-    filter: invert(48%) sepia(80%) saturate(5229%) hue-rotate(133deg) brightness(97%) contrast(101%);
     rotate: 216deg;
+    filter: invert(91%) sepia(54%) saturate(2976%) hue-rotate(304deg) brightness(100%) contrast(92%);
   }
   80% {
     rotate: 288deg;
+    filter: invert(92%) sepia(83%) saturate(7353%) hue-rotate(165deg) brightness(93%) contrast(92%);
   }
   100% {
-    filter: invert(85%) sepia(10%) saturate(3063%) hue-rotate(315deg) brightness(102%) contrast(93%);
     rotate: 360deg;
+    filter: invert(12%) sepia(100%) saturate(3814%) hue-rotate(308deg) brightness(100%) contrast(100%);
   }
 }
 .container-page4__bottom-section .vert1-part {
@@ -4219,6 +4221,8 @@ body .accueil {
 .container-page4__bottom-section .vert1-part .footer__logo img {
   width: 350px;
   position: static;
+  filter: invert(93%) sepia(19%) saturate(251%) hue-rotate(14deg) brightness(106%) contrast(102%);
+  margin-left: 20px;
 }
 .container-page4__bottom-section .vert1-part .footer__texts {
   width: 50%;
@@ -4256,7 +4260,580 @@ body .accueil {
   filter: invert(9%) sepia(69%) saturate(1246%) hue-rotate(188deg) brightness(93%) contrast(103%);
 }
 
-/*§§§§§§§§§§§§§§§§§§*/
-/*§§§§§§§§§§§§§§§§§§*/
-/*§§§§§§§§§§§§§§§§§§*/
-/*Responsive Design*//*# sourceMappingURL=style.css.map */
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*RESPONSIVE DESIGN*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§*/
+/*$$$$$$$$$$$$$$$$$$$*/
+/*Container 900px*/
+/*Bloc Principal 900px*/
+@media only screen and (max-width: 900px) {
+  .container-page4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .container-page4 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 220px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+  }
+  .container-page4 nav a {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1em;
+  }
+  .container-page4 nav a:hover {
+    color: #00a250;
+    font-size: 22px;
+  }
+  /*TITRE PRINCIPAL 900px*/
+  .container-page4__header-page4 {
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 150px;
+    /*MOUVEMENT SOURIS 900px*/
+  }
+  .container-page4__header-page4 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2em;
+    padding: 0.5em 0.5em 1em;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 2px 2px 15px black;
+  }
+  .container-page4__header-page4 span {
+    margin-top: 1em;
+    font-size: 20px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .container-page4__header-page4 .barre {
+    left: -60px;
+    top: 60px;
+    width: 15px;
+    height: 70px;
+    border-radius: 10px;
+  }
+  .container-page4__header-page4 .barre .point {
+    width: 5px;
+    height: 5px;
+  }
+  /*§§§§§§§§§§§§§§§§*/
+  /*TOP SECTION 900px*/
+  .container-page4__top-section {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-bottom: 300px;
+  }
+  .container-page4__top-section .top-section-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container-page4__top-section .top-section-logos img {
+    width: 200px;
+    margin: 0 2em;
+  }
+  /*§§§§§§§§§§§§§§§§*/
+  /*Conclusion 900px*/
+  .container-page4__bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .container-page4__bottom-section .vert3-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 200px;
+    margin-top: -150px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    box-shadow: 3px -3px 15px #031837;
+  }
+  .container-page4__bottom-section .vert3-part img {
+    position: absolute;
+    width: 260px;
+    top: -130px;
+  }
+  .container-page4__bottom-section .vert3-part h3 {
+    font-size: 34px;
+    text-align: center;
+    margin: 0.2em 0 1em;
+    width: 80%;
+  }
+  .container-page4__bottom-section .vert3-part .avantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part img {
+    width: 60px;
+    margin-top: 1em;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part p {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 1em 0;
+    width: 75%;
+  }
+  .container-page4__bottom-section .vert1-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container-page4__bottom-section .vert1-part .footer__logo img {
+    width: 350px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts h3 {
+    margin: 1.5em 0 1em;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts a {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts a:hover {
+    font-weight: 500;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts .footer-lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts .footer-lien img {
+    width: 20px;
+    margin-left: 10px;
+  }
+}
+/*$$$$$$$$$$$$$$$$$$$*/
+/*Container 700px*/
+/*Bloc Principal 700px*/
+@media only screen and (max-width: 700px) {
+  .container-page4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .container-page4 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 180px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+  }
+  .container-page4 nav a {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
+  .container-page4 nav a:hover {
+    color: #00a250;
+    font-size: 20px;
+  }
+  /*TITRE PRINCIPAL 700px*/
+  .container-page4__header-page4 {
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 150px;
+    /*MOUVEMENT SOURIS 700px*/
+  }
+  .container-page4__header-page4 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.2em;
+    padding: 0.5em 0.5em 1em;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 2px 2px 15px black;
+  }
+  .container-page4__header-page4 span {
+    margin-top: 1em;
+    font-size: 18px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .container-page4__header-page4 .barre {
+    left: -60px;
+    top: 60px;
+    width: 15px;
+    height: 70px;
+    border-radius: 10px;
+  }
+  .container-page4__header-page4 .barre .point {
+    width: 5px;
+    height: 5px;
+  }
+  /*§§§§§§§§§§§§§§§§*/
+  /*TOP SECTION 700px*/
+  .container-page4__top-section {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-bottom: 300px;
+  }
+  .container-page4__top-section .top-section-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container-page4__top-section .top-section-logos img {
+    width: 160px;
+    margin: 0 2em;
+  }
+  /*§§§§§§§§§§§§§§§§*/
+  /*Conclusion 700px*/
+  .container-page4__bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .container-page4__bottom-section .vert3-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 140px;
+    margin-top: -150px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 3px -3px 15px #031837;
+  }
+  .container-page4__bottom-section .vert3-part img {
+    position: absolute;
+    width: 200px;
+    top: -100px;
+  }
+  .container-page4__bottom-section .vert3-part h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0.2em 0 1em;
+    width: 80%;
+  }
+  .container-page4__bottom-section .vert3-part .avantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part img {
+    width: 60px;
+    margin-top: 1em;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part p {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 1em 0;
+    width: 75%;
+  }
+  .container-page4__bottom-section .vert1-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container-page4__bottom-section .vert1-part .footer__logo img {
+    width: 320px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts h3 {
+    margin: 1.5em 0 1em;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts a {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts a:hover {
+    font-weight: 500;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts .footer-lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts .footer-lien img {
+    width: 20px;
+    margin-left: 10px;
+  }
+}
+/*$$$$$$$$$$$$$$$$$$$*/
+/*Container 500px*/
+/*Bloc Principal 500px*/
+@media only screen and (max-width: 500px) {
+  .container-page4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .container-page4 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 210px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .container-page4 nav a {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+  .container-page4 nav a:hover {
+    color: #00a250;
+    font-size: 18px;
+  }
+  /*TITRE PRINCIPAL 500px*/
+  .container-page4__header-page4 {
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 150px;
+    /*MOUVEMENT SOURIS 500px*/
+  }
+  .container-page4__header-page4 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2em;
+    padding: 0.5em 0.5em 1em;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 2px 2px 15px black;
+  }
+  .container-page4__header-page4 span {
+    margin-top: 1em;
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .container-page4__header-page4 .barre {
+    left: -50px;
+    top: 230px;
+    width: 12px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .container-page4__header-page4 .barre .point {
+    width: 5px;
+    height: 5px;
+  }
+  /*§§§§§§§§§§§§§§§§*/
+  /*TOP SECTION 500px*/
+  .container-page4__top-section {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-bottom: 240px;
+  }
+  .container-page4__top-section .top-section-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container-page4__top-section .top-section-logos img {
+    width: 140px;
+    margin: 0 2em;
+  }
+  /*§§§§§§§§§§§§§§§§*/
+  /*Conclusion 500px*/
+  .container-page4__bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .container-page4__bottom-section .vert3-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 110px;
+    margin-top: -150px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 3px -3px 15px #031837;
+  }
+  .container-page4__bottom-section .vert3-part img {
+    position: absolute;
+    width: 140px;
+    top: -70px;
+  }
+  .container-page4__bottom-section .vert3-part h3 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0.2em 0 1em;
+    width: 80%;
+  }
+  .container-page4__bottom-section .vert3-part .avantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part img {
+    width: 40px;
+    margin-top: 1em;
+  }
+  .container-page4__bottom-section .vert3-part .avantages .avantages-part p {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 1em 0;
+    width: 75%;
+  }
+  .container-page4__bottom-section .vert1-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container-page4__bottom-section .vert1-part .footer__logo img {
+    width: 190px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts h3 {
+    margin: 1.5em 0.5em 1em;
+    width: 90%;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts a {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts a:hover {
+    font-weight: 500;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts .footer-lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .container-page4__bottom-section .vert1-part .footer__texts .footer-lien img {
+    width: 20px;
+    margin-left: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
