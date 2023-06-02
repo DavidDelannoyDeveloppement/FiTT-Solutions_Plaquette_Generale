@@ -717,13 +717,14 @@
         padding-bottom: 150px;
 
         h1 {
+            width: 90%;
             @include flex-center-column;
             text-align: center;
             font-size: 22px;
             line-height: 1.2em;
-            padding: 0.5em 0.5em 1em;
-            border-bottom-left-radius: 60px;
-            border-bottom-right-radius: 60px;
+            padding: 0.5em 0em 1em;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
             box-shadow: 2px 2px 15px black;
         }
         span {
@@ -852,7 +853,7 @@
             .footer__texts {
                 width: 100%;
                 @include flex-center-column;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
 
                 h3 {
                     margin: 1.5em 0.5em 1em;

@@ -929,6 +929,7 @@
             }
 
             .dash-img {
+                margin-bottom: 0;
 
                 .support-pc2 {
                     @include flex-Center;
@@ -948,7 +949,7 @@
 
         .texts {
             width: 600px;
-
+            margin-top: 30px;
 
             .descriptions {
                 @include flex-Center;
@@ -1404,6 +1405,7 @@
             }
 
             .dash-img {
+                margin-bottom: 0;
 
                 .support-pc2 {
                     @include flex-Center;
@@ -1423,7 +1425,7 @@
 
         .texts {
             width: 460px;
-
+            margin-top: 30px;
 
             .descriptions {
                 @include flex-Center;
@@ -1548,12 +1550,14 @@
 
     /*TITRE PRINCIPAL -500px*/
     .container-page3__header-page3 {
-        width: 100%;
+        width: 90%;
         // padding-bottom: 80px;
 
         h1 {
             font-size: 22px;
             padding: 0.5em 0.3em 1em;
+            border-bottom-left-radius: 45px;
+            border-bottom-right-radius: 45px;
         }
         span {
             font-size: 14px;
@@ -1805,7 +1809,7 @@
         justify-content: space-around;
         // flex-wrap: wrap;
         width: 90%;
-        margin-bottom: -110px;
+        margin-bottom: -125px;
 
 
         .middle-part {
@@ -1837,7 +1841,7 @@
         width: 100%;
         h3 {
             font-size: 20px;
-            margin: 6em 0 1.5em;
+            margin: 8em 0 1.5em;
             width: 90%;
         }
     }
@@ -1863,7 +1867,7 @@
 
                     img {
                         border-radius: 20px;
-                        width: 80px;
+                        width: 70px;
                     }
                 }
 
@@ -1871,7 +1875,7 @@
 
                     img {
                         border-radius: 50%;
-                        width: 80px;
+                        width: 60px;
                     }
                 }
             }
@@ -1896,7 +1900,7 @@
 
         .texts {
             width: 260px;
-
+            margin-top: 15px;
 
             .descriptions {
                 @include flex-Center;
