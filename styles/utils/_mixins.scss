@@ -17,8 +17,8 @@
     animation-name: $direction;
 
     @keyframes slide-right {
-        from {transform: translateX(-100%);}
-        50% {transform: translateX(-100%);}
+        from {transform: translateX(-200%);}
+        50% {transform: translateX(-200%);}
         to {transform: translateX(0);}
     }
 
@@ -26,6 +26,12 @@
         from {transform: translateX(1000px);}
         50% {transform: translateX(900px);}
         to {transform: translateX(000px);}
+    }
+
+    @keyframes slide-top {
+        from {transform: translateY(3000px);}
+        50% {transform: translateY(3000px);}
+        to {transform: translateY(0);}
     }
 }
 
@@ -81,6 +87,28 @@
     }
 }
 
+
+
+
+/*Animation opacity-douce*/
+@mixin opac-douce{
+
+
+    @keyframes opac-douce {
+        0% {opacity:0;}
+        10% {opacity:0;}
+        20% {opacity:0;}
+        30% {opacity:0;}
+        40% {opacity:0;}
+        50% {opacity:0;}
+        60% {opacity:0;}
+        70% {opacity:0;}
+        80% {opacity:0.8;}
+        90% {opacity: 0.89;}
+        99% {opacity: 0.95;}
+        100% {opacity: 1;}
+    }
+}
 
 
 
@@ -268,9 +296,4 @@
 }
 
 
-//        filter: invert(85%) sepia(10%) saturate(3063%) hue-rotate(315deg) brightness(102%) contrast(93%);
-
-//        filter: invert(48%) sepia(80%) saturate(5229%) hue-rotate(133deg) brightness(97%) contrast(101%);
-
-//        filter: invert(41%) sepia(76%) saturate(1121%) hue-rotate(160deg) brightness(98%) contrast(102%);
 
