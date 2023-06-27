@@ -17,17 +17,25 @@
         height: 100px;
 
         a {
-            text-align: center;
-            font-weight: 700;
-            font-size: 20px;
-            color: $saumon;
-            text-decoration: none;
-            margin-bottom: 1em;
+            border-radius: 50%;
+            filter: invert(12%) sepia(12%) saturate(3230%) hue-rotate(175deg) brightness(97%) contrast(108%); 
+            // text-align: center;
+            // font-weight: 700;
+            // font-size: 20px;
+            // color: $saumon;
+            // text-decoration: none;
+            // margin-bottom: 1em;
+
+            img {
+                border-radius: 50%;
+                width: 50px;
+            }
         }
 
         a:hover {
-            color: $vert1;
-            font-size: 22px;
+            filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%); 
+            // color: $vert1;
+            // font-size: 22px;
 
         }
     }

@@ -120,7 +120,7 @@ body {
   font-size: 80px;
   font-weight: 700;
   line-height: 110px;
-  color: #be097f;
+  color: #3fab35;
   text-align: center;
   text-shadow: 3px 3px 3px #031837;
 }
@@ -765,7 +765,7 @@ body {
     justify-content: space-around;
     width: 100%;
     min-width: 28px;
-    height: 340px;
+    height: 300px;
     margin-top: 40px;
     margin-right: 0;
   }
@@ -817,15 +817,15 @@ body {
   height: 100px;
 }
 .container-page2 nav a {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: #f6ab78;
-  text-decoration: none;
+  border-radius: 50%;
+  filter: invert(87%) sepia(87%) saturate(3173%) hue-rotate(303deg) brightness(100%) contrast(93%);
+}
+.container-page2 nav a img {
+  border-radius: 50%;
+  width: 50px;
 }
 .container-page2 nav a:hover {
-  color: #00a250;
-  font-size: 22px;
+  filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%);
 }
 
 /*TITRE PRINCIPAL*/
@@ -1835,17 +1835,15 @@ body {
   height: 100px;
 }
 .container-page3 nav a {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: #f6ab78;
-  text-decoration: none;
-  text-shadow: 0.8px 0.8px 1px #031837;
-  margin-bottom: 1em;
+  border-radius: 50%;
+  filter: invert(12%) sepia(12%) saturate(3230%) hue-rotate(175deg) brightness(97%) contrast(108%);
+}
+.container-page3 nav a img {
+  border-radius: 50%;
+  width: 50px;
 }
 .container-page3 nav a:hover {
-  color: #00a250;
-  font-size: 22px;
+  filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%);
 }
 
 /*TITRE PRINCIPAL*/
@@ -4060,16 +4058,15 @@ body {
   height: 100px;
 }
 .container-page4 nav a {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: #f6ab78;
-  text-decoration: none;
-  margin-bottom: 1em;
+  border-radius: 50%;
+  filter: invert(12%) sepia(12%) saturate(3230%) hue-rotate(175deg) brightness(97%) contrast(108%);
+}
+.container-page4 nav a img {
+  border-radius: 50%;
+  width: 50px;
 }
 .container-page4 nav a:hover {
-  color: #00a250;
-  font-size: 22px;
+  filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%);
 }
 
 /*TITRE PRINCIPAL*/
