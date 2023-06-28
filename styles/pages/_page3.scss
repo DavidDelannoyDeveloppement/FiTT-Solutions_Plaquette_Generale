@@ -21,13 +21,6 @@
         a {
             border-radius: 50%;
             filter: invert(12%) sepia(12%) saturate(3230%) hue-rotate(175deg) brightness(97%) contrast(108%);            
-            // text-align: center;
-            // font-weight: 700;
-            // font-size: 20px;
-            // color: $saumon;
-            // text-decoration: none;
-            // text-shadow: 0.8px 0.8px 1px $bleu;
-            // margin-bottom: 1em;
 
             img {
                 border-radius: 50%;
@@ -37,9 +30,6 @@
 
         a:hover {
             filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%);  
-
-            // color: $vert1;
-            // font-size: 22px;
         }
     }
 
@@ -173,7 +163,7 @@
 
     /*Plan Capteurs*/
     .plan__capteurs {
-        animation: opac 1s;
+        animation: opac-douce-2 2s;
         @include flex-center-column;
         .images-capteurs {
             img {
@@ -205,7 +195,7 @@
 
     /*Plan Lora*/
     .plan__lora {
-        animation: opac 2s;
+        animation: opac-douce-2 2.3s;
         @include flex-center-column;
         align-self: flex-end;
 
@@ -223,13 +213,13 @@
 
     /*Plan Passerelle*/
     .passerelle {
-        animation: opac 3s;
+        animation: opac-douce-2 2.6s;
         @include flex-center-column;
     }
 
     /*>Plan Wifi*/
     .plan__wifi {
-        animation: opac 4s;
+        animation: opac-douce-2 2.9s;
         @include flex-center-column;
         align-self: flex-end;
 
@@ -267,7 +257,7 @@
     /*Base*/
     .plan__base {
         @include flex-center-column;
-        animation: opac 5s;
+        animation: opac-douce-2 3.2s;
         .support-base {
             position: relative;
             margin-top: 20px;
@@ -306,7 +296,7 @@
     /*Flèche droite*/
     .fleche {
         @include flex-Center;
-        animation: opac 6s;
+        animation: opac-douce-2 3.5s;
 
         img {
             filter: invert(10%) sepia(30%) saturate(2001%) hue-rotate(182deg) brightness(100%) contrast(105%);
@@ -320,7 +310,7 @@
     /*DashBoard*/
     .dashboard {
         @include flex-center-column;
-        animation: opac 7s;
+        animation: opac-douce-2 3.8s;
         .support-pc {
             @include flex-Center;
 
@@ -347,7 +337,7 @@
 
     }
 }
-@include opac;
+@include opac-douce-2;
 
 
 /*§§§§§§§§§§§§§§§*/
@@ -594,8 +584,8 @@
     .container-page3 {
 
         nav {
-            top: 156px;
-            left: 20px;
+            top: 20px;
+            left: 10px;
 
             a {
                 margin-bottom: 0.5em;
@@ -707,7 +697,7 @@
 
         /*Plan Capteurs*/
         .plan__capteurs {
-            animation: opac 1s;
+            animation: opac-douce-2 2s;
             @include flex-center-column;
             .images-capteurs {
                 img {
@@ -733,7 +723,7 @@
 
         /*Plan Lora*/
         .plan__lora {
-            animation: opac 2s;
+            animation: opac-douce-2 2.3s;
             @include flex-Center;
             flex-direction: row;
             align-self: center;
@@ -754,13 +744,13 @@
 
         /*Plan Passerelle*/
         .passerelle {
-            animation: opac 3s;
+            animation: opac-douce-2 2.6s;
             @include flex-center-column;
         }
 
         /*>Plan Wifi*/
         .plan__wifi {
-            animation: opac 4s;
+            animation: opac-douce-2 2.9s;
             @include flex-Center;
             flex-direction: row;
             align-self: center;
@@ -797,7 +787,7 @@
         /*Base*/
         .plan__base {
             @include flex-center-column;
-            animation: opac 5s;
+            animation: opac-douce-2 3.2s;
             .support-base {
                 margin-top: 20px;
 
@@ -821,7 +811,7 @@
         /*Flèche droite*/
         .fleche {
             @include flex-Center;
-            animation: opac 6s;
+            animation: opac-douce-2 3.5s;
             margin: 2em 0;
 
             img {
@@ -836,7 +826,7 @@
         /*DashBoard*/
         .dashboard {
             @include flex-center-column;
-            animation: opac 7s;
+            animation: opac-douce-2 3.8s;
             .support-pc {
                 @include flex-Center;
 
@@ -859,7 +849,7 @@
             margin-bottom: 1em;
         }
     }
-    @include opac;
+    @include opac-douce-2;
 
 
     /*§§§§§§§§§§§§§§§*/
@@ -1067,6 +1057,9 @@
     .container-page3 {
 
         nav {
+            flex-direction: row;
+            width: 120px;
+            justify-content: space-between;
             top: 150px;
             left: 20px;
 
@@ -1181,7 +1174,7 @@
 
         /*Plan Capteurs*/
         .plan__capteurs {
-            animation: opac 1s;
+            animation: opac-douce-2 2s;
             @include flex-center-column;
             .images-capteurs {
                 img {
@@ -1207,7 +1200,7 @@
 
         /*Plan Lora*/
         .plan__lora {
-            animation: opac 2s;
+            animation: opac-douce-2 2.3s;
             @include flex-Center;
             flex-direction: row;
             align-self: center;
@@ -1228,13 +1221,13 @@
 
         /*Plan Passerelle*/
         .passerelle {
-            animation: opac 3s;
+            animation: opac-douce-2 2.6s;
             @include flex-center-column;
         }
 
         /*>Plan Wifi*/
         .plan__wifi {
-            animation: opac 4s;
+            animation: opac-douce-2 2.9s;
             @include flex-Center;
             flex-direction: row;
             align-self: center;
@@ -1271,7 +1264,7 @@
         /*Base*/
         .plan__base {
             @include flex-center-column;
-            animation: opac 5s;
+            animation: opac-douce-2 3.2s;
             .support-base {
                 margin-top: 20px;
 
@@ -1295,7 +1288,7 @@
         /*Flèche droite*/
         .fleche {
             @include flex-Center;
-            animation: opac 6s;
+            animation: opac-douce-2 3.5s;
             margin: 2em 0;
 
             img {
@@ -1310,7 +1303,7 @@
         /*DashBoard*/
         .dashboard {
             @include flex-center-column;
-            animation: opac 7s;
+            animation: opac-douce-2 3.8s;
             .support-pc {
                 @include flex-Center;
 
@@ -1333,7 +1326,7 @@
             margin-bottom: 1em;
         }
     }
-    @include opac;
+    @include opac-douce-2;
 
 
     /*§§§§§§§§§§§§§§§*/
@@ -1543,10 +1536,14 @@
         nav {
             top: 140px;
             left: 30px;
+            width: 100px;
 
             a {
                 font-size: 16px;
                 margin-bottom: 0.5em;
+                img {
+                    width: 40px;
+                }
             }
 
             a:hover {
@@ -1657,7 +1654,7 @@
 
         /*Plan Capteurs*/
         .plan__capteurs {
-            animation: opac 1s;
+            animation: opac-douce-2 2s;
             @include flex-center-column;
             .images-capteurs {
                 img {
@@ -1683,7 +1680,7 @@
 
         /*Plan Lora*/
         .plan__lora {
-            animation: opac 2s;
+            animation: opac-douce-2 2.3s;
             @include flex-Center;
             flex-direction: row;
             align-self: center;
@@ -1704,13 +1701,13 @@
 
         /*Plan Passerelle*/
         .passerelle {
-            animation: opac 3s;
+            animation: opac-douce-2 2.6s;
             @include flex-center-column;
         }
 
         /*>Plan Wifi*/
         .plan__wifi {
-            animation: opac 4s;
+            animation: opac-douce-2 2.9s;
             @include flex-Center;
             flex-direction: row;
             align-self: center;
@@ -1747,7 +1744,7 @@
         /*Base*/
         .plan__base {
             @include flex-center-column;
-            animation: opac 5s;
+            animation: opac-douce-2 3.2s;
             .support-base {
                 margin-top: 20px;
 
@@ -1771,7 +1768,7 @@
         /*Flèche droite*/
         .fleche {
             @include flex-Center;
-            animation: opac 6s;
+            animation: opac-douce-2 3.5s;
             margin: 2em 0;
 
             img {
@@ -1786,7 +1783,7 @@
         /*DashBoard*/
         .dashboard {
             @include flex-center-column;
-            animation: opac 7s;
+            animation: opac-douce-2 3.8s;
             .support-pc {
                 @include flex-Center;
 
@@ -1809,7 +1806,7 @@
             margin-bottom: 1em;
         }
     }
-    @include opac;
+    @include opac-douce-2;
 
 
     /*§§§§§§§§§§§§§§§*/

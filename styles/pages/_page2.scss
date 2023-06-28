@@ -18,11 +18,6 @@
         a {
             border-radius: 50%;
             filter: invert(87%) sepia(87%) saturate(3173%) hue-rotate(303deg) brightness(100%) contrast(93%);
-            // text-align: center;
-            // font-weight: 700;
-            // font-size: 20px;
-            // color: $saumon;
-            // text-decoration: none;
             
             img {
                 border-radius: 50%;
@@ -32,8 +27,6 @@
 
         a:hover {
             filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%);
-            // color: $vert1;
-            // font-size: 22px;
         }
     }
 
@@ -469,8 +462,8 @@
     .container-page2 {
 
         nav {
-            top: 150px; //////////////
-            left: 20px;
+            top: 20px; //////////////
+            left: 10px;
             width: 100px;
             height: 100px;
 
@@ -703,7 +696,7 @@
     .container-page2 {
 
         nav {
-            top: 120px; //////////////
+            top: 140px; //////////////
             left: 20px;
             width: 100px;
             height: 100px;
@@ -945,9 +938,11 @@
 
             a {
                 font-size: 16px;
+                img {
+                    width: 40px;
+                }
             }
         }
-
     }
 
 

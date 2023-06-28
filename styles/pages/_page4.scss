@@ -19,12 +19,6 @@
         a {
             border-radius: 50%;
             filter: invert(12%) sepia(12%) saturate(3230%) hue-rotate(175deg) brightness(97%) contrast(108%); 
-            // text-align: center;
-            // font-weight: 700;
-            // font-size: 20px;
-            // color: $saumon;
-            // text-decoration: none;
-            // margin-bottom: 1em;
 
             img {
                 border-radius: 50%;
@@ -34,9 +28,6 @@
 
         a:hover {
             filter: invert(43%) sepia(39%) saturate(6415%) hue-rotate(132deg) brightness(95%) contrast(102%); 
-            // color: $vert1;
-            // font-size: 22px;
-
         }
     }
 
@@ -146,7 +137,7 @@
             position: absolute;
             width: 300px;
             top: -150px;
-            filter: invert(94%) sepia(8%) saturate(1154%) hue-rotate(318deg) brightness(107%) contrast(107%);
+            filter: none;
         }
         
 
@@ -209,7 +200,7 @@
             img {
                 width: 350px;
                 position: static;
-                filter: invert(93%) sepia(19%) saturate(251%) hue-rotate(14deg) brightness(106%) contrast(102%);
+                filter: none;
                 margin-left: 20px;
             }
         }
@@ -281,10 +272,11 @@
         height: 100%;
 
         nav {
-            @include flex-center-column;
+            flex-direction: row;
+            width: 120px;
+            justify-content: space-between;
             top: 220px;
             left: 80px;
-            width: 100px;
             height: 100px;
 
             a {
@@ -489,10 +481,10 @@
         height: 100%;
 
         nav {
-            @include flex-center-column;
+            // @include flex-center-column;
             top: 180px;
             left: 80px;
-            width: 100px;
+            // width: 100px;
             height: 100px;
 
             a {
@@ -697,9 +689,9 @@
         height: 100%;
 
         nav {
-            @include flex-center-column;
+            // @include flex-center-column;
             top: 210px;
-            left: 20px;
+            left: 40px;
             width: 100px;
             height: 100px;
 
@@ -707,6 +699,9 @@
                 text-align: center;
                 font-size: 16px;
                 margin-bottom: 1em;
+                img {
+                    width: 40px;
+                }
             }
 
             a:hover {
