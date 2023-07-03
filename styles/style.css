@@ -227,7 +227,7 @@ body {
 .right-section .right-section__triptyque {
   animation-duration: 4s;
   animation-name: slide-top;
-  margin-top: 60px;
+  margin-top: 340px;
 }
 @keyframes slide-right {
   from {
