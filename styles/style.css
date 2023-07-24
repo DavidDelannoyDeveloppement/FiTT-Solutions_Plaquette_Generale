@@ -40,13 +40,20 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  /*Variante fond pied*/
 }
 .main_container .image-fond {
   position: absolute;
-  top: 220px;
-  left: 300px;
-  width: 800px;
-  opacity: 0.7;
+  top: 130px;
+  left: 560px;
+  width: 600px;
+  rotate: 14deg;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 1100px) {
+  .main_container .image-fond {
+    opacity: 0.7;
+  }
 }
 
 /*§§§§§§§§§§§§§§§*/
@@ -118,10 +125,10 @@ body {
   }
 }
 .left-section .left-section__text-part h1 {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 110px;
-  color: #3fab35;
+  color: #00a250;
   text-align: center;
   text-shadow: 3px 3px 3px #031837;
 }
@@ -134,7 +141,7 @@ body {
   text-align: center;
 }
 .left-section .left-section__text-part h2 span {
-  color: #3fab35;
+  color: #00a250;
   text-shadow: 3px 3px 3px #031837;
 }
 
@@ -178,9 +185,21 @@ body {
 }
 .right-section .right-section__liens #a1 {
   margin-right: 40%;
+  color: #00a250;
+  border-bottom: solid 4px #00a250;
+  border-right: solid 2px #00a250;
+}
+.right-section .right-section__liens #a1:hover {
+  border: solid 2px #00a250;
 }
 .right-section .right-section__liens #a2 {
   margin-right: 20%;
+  color: #031837;
+  border-bottom: solid 4px #031837;
+  border-right: solid 2px #031837;
+}
+.right-section .right-section__liens #a2:hover {
+  border: solid 2px #031837;
 }
 .right-section .right-section__liens a:hover {
   border: solid 2px #be097f;
@@ -227,7 +246,7 @@ body {
 .right-section .right-section__triptyque {
   animation-duration: 4s;
   animation-name: slide-top;
-  margin-top: 200px;
+  margin-top: 240px;
 }
 @keyframes slide-right {
   from {

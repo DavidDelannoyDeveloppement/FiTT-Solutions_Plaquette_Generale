@@ -29,13 +29,31 @@ body {
     height: 100%;
     overflow: hidden;
 
+    // .image-fond  {
+    //     position: absolute;
+    //     top: 220px;
+    //     left: 300px;
+    //     width: 800px;
+    //     opacity: 0.7;
+    // }
+
+
+    /*Variante fond pied*/
+    
     .image-fond  {
         position: absolute;
-        top: 220px;
-        left: 300px;
-        width: 800px;
-        opacity: 0.7;
+        top: 130px;
+        left: 560px;
+        width: 600px;
+        rotate: 14deg;
+        opacity:0.9;
     }
+    @media only screen and (max-width:1100px){
+        .image-fond {
+            opacity: 0.7;
+        }
+    }
+
 }
 
 
@@ -74,10 +92,10 @@ body {
 
         
         h1 {
-            font-size: 80px;
+            font-size: 100px;
             font-weight: 700;
             line-height: 110px;
-            color: $vert2;
+            color: $vert1;
             text-align: center;
             text-shadow: 3px 3px 3px $bleu;
         }
@@ -89,10 +107,10 @@ body {
             line-height: 80px;
             color: $bleu;
             text-align: center;
-            
+            // margin-left: 20%;
             
             span {
-                color: $vert2;
+                color: $vert1;
                 text-shadow: 3px 3px 3px $bleu;
             }
         }
@@ -140,14 +158,29 @@ body {
 
         }
 
-
         #a1 {
             margin-right: 40%;
+            color: $vert1;
+            border-bottom : solid 4px $vert1;
+            border-right : solid 2px $vert1;
         }
+
+        #a1:hover {
+            border: solid 2px $vert1;
+        }
+
 
         #a2 {
             margin-right: 20%;
+            color: $bleu;
+            border-bottom : solid 4px $bleu;
+            border-right : solid 2px $bleu;
         }
+
+        #a2:hover {
+            border: solid 2px $bleu;
+        }
+
 
         a:hover {
             border: solid 2px $violet;
@@ -159,7 +192,7 @@ body {
 
     .right-section__triptyque {
         @include Slide(slide-top, 4s);
-        margin-top: 200px;
+        margin-top: 240px;
 
         img {
         
