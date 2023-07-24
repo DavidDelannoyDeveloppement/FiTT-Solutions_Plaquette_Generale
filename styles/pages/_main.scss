@@ -90,8 +90,16 @@ body {
         width: 600px;
         height: 500px;
 
-        
         h1 {
+            margin-bottom: 0.5em;
+            font-size: 62px;
+            font-weight: 700;
+            line-height: 80px;
+            color: $bleu;
+            text-align: center;
+        }
+
+        h2 {
             font-size: 100px;
             font-weight: 700;
             line-height: 110px;
@@ -100,7 +108,7 @@ body {
             text-shadow: 3px 3px 3px $bleu;
         }
 
-        h2{
+        h3{
             margin-top: 0.5em;
             font-size: 50px;
             font-weight: 700;
@@ -111,7 +119,7 @@ body {
             
             span {
                 color: $vert1;
-                text-shadow: 3px 3px 3px $bleu;
+                text-shadow: 2px 2px 3px $bleu;
             }
         }
     }

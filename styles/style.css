@@ -125,6 +125,14 @@ body {
   }
 }
 .left-section .left-section__text-part h1 {
+  margin-bottom: 0.5em;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #031837;
+  text-align: center;
+}
+.left-section .left-section__text-part h2 {
   font-size: 100px;
   font-weight: 700;
   line-height: 110px;
@@ -132,7 +140,7 @@ body {
   text-align: center;
   text-shadow: 3px 3px 3px #031837;
 }
-.left-section .left-section__text-part h2 {
+.left-section .left-section__text-part h3 {
   margin-top: 0.5em;
   font-size: 50px;
   font-weight: 700;
@@ -140,9 +148,9 @@ body {
   color: #031837;
   text-align: center;
 }
-.left-section .left-section__text-part h2 span {
+.left-section .left-section__text-part h3 span {
   color: #00a250;
-  text-shadow: 3px 3px 3px #031837;
+  text-shadow: 2px 2px 3px #031837;
 }
 
 /*§§§§§§§§§§§§§§§*/
