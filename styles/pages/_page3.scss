@@ -52,8 +52,8 @@
         font-weight: 700;
         font-size: 36px;
         padding: 0.5em 0.5em 1em;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         box-shadow: 2px 2px 20px $vert3;
     }
     span {
@@ -355,7 +355,7 @@
         @include flex-center-column;
         background-color: $vert3;
         box-shadow: 5px -5px 10px $bleu;
-        border-radius: 50px;
+        border-radius: 15px;
         z-index: 1;
         width: 360px;
         height: 180px;
@@ -495,7 +495,7 @@
 .cee-box {
     @include flex-Center;
     background-color: $vert1;
-    border-radius: 60px;
+    border-radius: 15px;
     margin: 100px 0 50px;
     position: relative;
     opacity: 0;
@@ -509,6 +509,8 @@
     }
 
     .cee-texts {
+        display: flex;
+        @include flex-center-column;
 
         h4 {
             text-align: center;
@@ -547,8 +549,8 @@
         font-weight: 700;
         font-size: 36px;
         padding: 1em 2em;
-        border-top-left-radius: 60px;
-        border-top-right-radius: 60px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         box-shadow: 4px 0 15px black;
     }
 
@@ -652,7 +654,7 @@
 
         h3 {
             font-size: 30px;
-            margin: 5.5em 0 1em;
+            margin: 2.5em 0 1em;
 
         }
     }
@@ -864,7 +866,7 @@
         .middle-part {
             @include flex-center-column;
             box-shadow: 5px -5px 10px $bleu;
-            border-radius: 50px;
+            border-radius: 15px;
             width: 360px;
             height: 180px;
             margin: 20px 10px;
@@ -986,7 +988,7 @@
     .cee-box {
         @include flex-Center;
         flex-wrap:wrap;
-        border-radius: 60px;
+        border-radius: 15px;
         margin: 100px 0 50px;
         width: 75%;
 
@@ -1032,8 +1034,8 @@
         a {
             font-size: 30px;
             padding: 1em 2em;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             box-shadow: 4px 0 15px black;
         }
 
@@ -1128,8 +1130,8 @@
         margin-bottom: 50px;
 
         h3 {
-            font-size: 24px;
-            margin: 7em 0 1em;
+            font-size: 26px;
+            margin: 4.5em 0 1em;
 
         }
     }
@@ -1341,7 +1343,7 @@
         .middle-part {
             @include flex-center-column;
             box-shadow: 5px -5px 10px $bleu;
-            border-radius: 50px;
+            border-radius: 15px;
             width: 360px;
             height: 180px;
             margin: 20px 10px;
@@ -1463,7 +1465,7 @@
     .cee-box {
         @include flex-Center;
         flex-wrap:wrap;
-        border-radius: 50px;
+        border-radius: 15px;
         margin: 100px 0 50px;
         width: 75%;
 
@@ -1509,8 +1511,8 @@
         a {
             font-size: 26px;
             padding: 1em 2em;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             box-shadow: 4px 0 15px black;
         }
 
@@ -1562,8 +1564,8 @@
         h1 {
             font-size: 22px;
             padding: 0.5em 0.3em 1em;
-            border-bottom-left-radius: 45px;
-            border-bottom-right-radius: 45px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         span {
             font-size: 14px;
@@ -1608,8 +1610,8 @@
         margin-bottom: 50px;
 
         h3 {
-            font-size: 20px;
-            margin: 8em 0 1em;
+            font-size: 22px;
+            margin: 5.5em 0 1em;
 
         }
     }
@@ -1821,7 +1823,7 @@
         .middle-part {
             @include flex-center-column;
             box-shadow: 5px -5px 10px $bleu;
-            border-radius: 36px;
+            border-radius: 10px;
             width: 360px;
             height: 200px;
             margin: 30px 10px;
@@ -1942,7 +1944,7 @@
     .cee-box {
         @include flex-Center;
         flex-wrap:wrap;
-        border-radius: 40px;
+        border-radius: 10px;
         margin: 50px 0 50px;
         width: 75%;
 
@@ -1990,8 +1992,8 @@
             width: 80%;
             font-size: 22px;
             padding: 1em 1em;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             box-shadow: 4px 0 15px black;
         }
 

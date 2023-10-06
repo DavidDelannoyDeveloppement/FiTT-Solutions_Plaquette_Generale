@@ -48,8 +48,8 @@
         font-weight: 700;
         font-size: 36px;
         padding: 40px 100px 40px 60px;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         box-shadow: 5px 5px 15px black;
     }
 
@@ -196,7 +196,7 @@
     height: 150px;
     width: 60%;
     margin-top: -75px;
-    border-radius: 75px;
+    border-radius: 15px;
     box-shadow: 5px 5px 10px $bleu;
 
     h3 {
@@ -267,25 +267,31 @@
         @include flex-center-column;
         align-items: flex-start;
         width: 861px;
-        border-radius: 60px;
+        border-radius: 15px;
         box-shadow: 5px 5px 10px $bleu;
         z-index: 11;
         padding: 0px 50px 40px;
 
 
 
-        h3 {
+        .lien-offres {
             @include flex-Center;
             align-self: center;
             background-color: $bleu;
             color: $creme;
             font-size: 26px;
             font-weight: 700;
+            text-decoration: none;
             width: 240px;
             height: 46px;
-            border-radius: 20px;
+            border-radius: 8px;
             margin-top: -23px;
             margin-bottom: 20px;
+        }
+        .lien-offres:hover{
+            background-color: $creme;
+            color: $bleu;
+            border: solid 1px $bleu;
         }
 
         h4 {
@@ -391,8 +397,8 @@
         font-weight: 700;
         font-size: 36px;
         padding: 40px 60px;
-        border-top-left-radius: 60px;
-        border-top-right-radius: 60px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         box-shadow: 4px 0 15px $vert1;
     }
 
@@ -483,8 +489,8 @@
         h1 {
             font-size: 30px;
             padding: 25px 80px 30px 50px;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
             box-shadow: 3px 3px 10px black;
         }
 
@@ -561,7 +567,7 @@
         height: 150px;
         width: 80%;
         margin-top: -75px;
-        border-radius: 75px;
+        border-radius: 15px;
         box-shadow: 5px 5px 10px $bleu;
 
         h3 {
@@ -604,16 +610,16 @@
 
         .left-slice-formule {
             width: 861px;
-            border-radius: 60px;
+            border-radius: 15px;
             box-shadow: 5px 5px 10px $bleu;
             padding: 0px 50px 20px;
 
 
-            h3 {
+            .lien-offres {
                 font-size: 26px;
                 width: 240px;
                 height: 46px;
-                border-radius: 20px;
+                border-radius: 5px;
                 margin-top: -23px;
                 margin-bottom: 20px;
             }
@@ -671,8 +677,8 @@
         a {
             font-size: 30px;
             padding: 40px 60px;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             box-shadow: 5px 5px 15px black;
         }
     }
@@ -716,8 +722,8 @@
         h1 {
             font-size: 26px;
             padding: 25px 80px 30px 50px;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
             box-shadow: 3px 3px 10px black;
         }
 
@@ -796,11 +802,11 @@
         height: 150px;
         width: 90%;
         margin-top: -75px;
-        border-radius: 75px;
+        border-radius: 15px;
         box-shadow: 5px 5px 10px $bleu;
 
         h3 {
-            font-size: 24px;
+            font-size: 20px;
         }
 
 
@@ -839,16 +845,16 @@
 
         .left-slice-formule {
             width: 861px;
-            border-radius: 60px;
+            border-radius: 15px;
             box-shadow: 5px 5px 10px $bleu;
             padding: 0px 50px 20px;
 
 
-            h3 {
+            .lien-offres {
                 font-size: 24px;
                 width: 200px;
                 height: 40px;
-                border-radius: 20px;
+                border-radius: 5px;
                 margin-top: -23px;
                 margin-bottom: 20px;
             }
@@ -906,8 +912,8 @@
         a {
             font-size: 26px;
             padding: 40px 60px;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             box-shadow: 5px 5px 15px black;
         }
     }
@@ -953,8 +959,8 @@
         h1 {
             font-size: 22px;
             padding: 20px;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
             box-shadow: 3px 3px 10px black;
         }
 
@@ -1030,15 +1036,15 @@
 
     /*MIDDLE-SECTION 500px*/
     .container-page2__middle-section {
-        height: 180px;
+        height: 160px;
         width: 90%;
         margin-top: -75px;
-        border-radius: 75px;
+        border-radius: 10px;
         box-shadow: 5px 5px 10px $bleu;
 
         h3 {
             font-size: 18px;
-            width: 80%;
+            width: 95%;
         }
 
 
@@ -1078,16 +1084,16 @@
 
         .left-slice-formule {
             width: 861px;
-            border-radius: 60px;
+            border-radius: 10px;
             box-shadow: 5px 5px 10px $bleu;
             padding: 0px 50px 20px;
 
 
-            h3 {
+            .lien-offres {
                 font-size: 20px;
                 width: 160px;
                 height: 34px;
-                border-radius: 20px;
+                border-radius: 5px;
                 margin-top: -23px;
                 margin-bottom: 20px;
             }
@@ -1146,8 +1152,8 @@
         a {
             font-size: 22px;
             padding: 30px 30px;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             box-shadow: 5px 5px 15px black;
         }
     }

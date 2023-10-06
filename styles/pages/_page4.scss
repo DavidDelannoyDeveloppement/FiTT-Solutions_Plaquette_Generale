@@ -51,8 +51,8 @@
         font-size: 36px;
         line-height: 1.2em;
         padding: 0.5em 0.5em 1em;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         box-shadow: 2px 2px 15px black;
     }
     span {
@@ -106,10 +106,14 @@
     .top-section-logos {
         @include flex-Center;
         flex-wrap: wrap;
+        margin-bottom: 2em;
 
         img {
             width: 200px;
-            margin: 0 2em;
+            margin: 1em;
+            background-color: white;
+            border: solid 1px $vert1;
+            border-radius: 10px;
         }
     }
 }
@@ -128,8 +132,8 @@
         background-color: $vert3;
         padding-top: 200px;
         margin-top: -150px;
-        border-top-left-radius: 60px;
-        border-top-right-radius: 60px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         position: relative;
         box-shadow: 3px -3px 15px $bleu;
 
@@ -189,8 +193,8 @@
         @include flex-Center;
         width: 100%;
         background-color: $vert1;
-        border-top-left-radius: 60px;
-        border-top-right-radius: 60px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
 
         .footer__logo  {
             @include flex-Center;
@@ -306,8 +310,8 @@
             font-size: 30px;
             line-height: 1.2em;
             padding: 0.5em 0.5em 1em;
-            border-bottom-left-radius: 60px;
-            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
             box-shadow: 2px 2px 15px black;
         }
         span {
@@ -348,7 +352,7 @@
 
             img {
                 width: 200px;
-                margin: 0 2em;
+                margin: 1em;
             }
         }
     }
@@ -366,8 +370,8 @@
             width: 80%;
             padding-top: 200px;
             margin-top: -150px;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             box-shadow: 3px -3px 15px $bleu;
 
             img {
@@ -418,8 +422,8 @@
             @include flex-Center;
             flex-wrap: wrap;
             width: 100%;
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
 
             .footer__logo  {
                 @include flex-Center;
@@ -514,8 +518,8 @@
             font-size: 26px;
             line-height: 1.2em;
             padding: 0.5em 0.5em 1em;
-            border-bottom-left-radius: 60px;
-            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
             box-shadow: 2px 2px 15px black;
         }
         span {
@@ -556,7 +560,7 @@
 
             img {
                 width: 160px;
-                margin: 0 2em;
+                margin: 1em;
             }
         }
     }
@@ -574,8 +578,8 @@
             width: 80%;
             padding-top: 140px;
             margin-top: -150px;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             box-shadow: 3px -3px 15px $bleu;
 
             img {
@@ -626,8 +630,8 @@
             @include flex-Center;
             flex-wrap: wrap;
             width: 100%;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
 
             .footer__logo  {
                 @include flex-Center;
@@ -726,8 +730,8 @@
             font-size: 22px;
             line-height: 1.2em;
             padding: 0.5em 0em 1em;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
             box-shadow: 2px 2px 15px black;
         }
         span {
@@ -768,7 +772,7 @@
 
             img {
                 width: 140px;
-                margin: 0 2em;
+                margin: 1em;
             }
         }
     }
@@ -786,8 +790,8 @@
             width: 80%;
             padding-top: 110px;
             margin-top: -150px;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             box-shadow: 3px -3px 15px $bleu;
 
             img {
@@ -838,8 +842,8 @@
             @include flex-Center;
             flex-wrap: wrap;
             width: 100%;
-            border-top-left-radius: 40px;
-            border-top-right-radius:40px;
+            border-top-left-radius: 10px;
+            border-top-right-radius:10px;
 
             .footer__logo  {
                 @include flex-Center;
