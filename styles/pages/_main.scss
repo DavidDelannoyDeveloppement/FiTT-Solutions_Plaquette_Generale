@@ -163,7 +163,6 @@ body {
             background-color: #fffff2;
             font-size: 18px;
             // text-shadow: 0.5px 0.5px 0.5px $bleu;
-
         }
 
         #a1 {
@@ -324,7 +323,7 @@ body {
                 @include flex-Center;
                 width: 380px;
                 height: 50px;
-                border-radius: 50px;
+                border-radius: 15px;
                 border-bottom : solid 4px $violet;
                 border-right : solid 2px $violet;
                 font-size: 18px;
@@ -624,6 +623,7 @@ body {
                 height: 36px;
                 border-bottom : solid 4px $violet;
                 border-right : solid 2px $violet;
+                border-radius: 10px;
                 font-size: 12px;
             }
 

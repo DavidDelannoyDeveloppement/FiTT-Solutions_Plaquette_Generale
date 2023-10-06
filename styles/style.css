@@ -428,7 +428,7 @@ body {
     align-items: center;
     width: 380px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 15px;
     border-bottom: solid 4px #be097f;
     border-right: solid 2px #be097f;
     font-size: 18px;
@@ -823,6 +823,7 @@ body {
     height: 36px;
     border-bottom: solid 4px #be097f;
     border-right: solid 2px #be097f;
+    border-radius: 10px;
     font-size: 12px;
   }
   .right-section .right-section__liens #a1 {
@@ -3907,12 +3908,25 @@ body {
     padding: 2em 0.5em;
   }
 }
+@media only screen and (max-width: 500px) {
+  .container-page4__comment-section .box-comment {
+    margin-bottom: 150px;
+    padding: 2em 0.5em;
+  }
+}
 .container-page4__comment-section .box-comment .logo-profil_box-comment {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   width: 90%;
+}
+@media only screen and (max-width: 500px) {
+  .container-page4__comment-section .box-comment .logo-profil_box-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container-page4__comment-section .box-comment .logo-profil_box-comment img {
   width: 150px;
@@ -3922,10 +3936,21 @@ body {
   color: #031837;
   text-align: center;
 }
+@media only screen and (max-width: 500px) {
+  .container-page4__comment-section .box-comment .logo-profil_box-comment h4 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
 .container-page4__comment-section .box-comment .text_box-comment {
   display: flex;
   margin-top: 3em;
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .container-page4__comment-section .box-comment .text_box-comment {
+    margin-top: 1em;
+  }
 }
 .container-page4__comment-section .box-comment .text_box-comment img {
   width: 60px;
@@ -3936,6 +3961,12 @@ body {
   .container-page4__comment-section .box-comment .text_box-comment img {
     width: 40px;
     height: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-page4__comment-section .box-comment .text_box-comment img {
+    width: 25px;
+    height: 25px;
   }
 }
 .container-page4__comment-section .box-comment .text_box-comment #citation-haut {
@@ -3950,6 +3981,13 @@ body {
   font-size: 18px;
   color: #031837;
   font-weight: 300;
+  text-align: justify;
+}
+@media only screen and (max-width: 500px) {
+  .container-page4__comment-section .box-comment .text_box-comment p {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 /*####################################*/
